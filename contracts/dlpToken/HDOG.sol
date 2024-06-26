@@ -116,7 +116,7 @@ contract HDOG is ERC20, ERC20Permit, ERC20Votes, Ownable2Step {
     function changeAdmin(address newAdmin) external virtual onlyOwner {
         address oldAdmin = admin;
         admin = newAdmin;
-        emit AdminChanged(oldAdmin, newAdmin);
+        emit AdminChanged(oldAdmin, newAdmin);(oldAdmin, newAdmin);
     }
 
     /**
